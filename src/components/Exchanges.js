@@ -33,9 +33,9 @@ const Exchanges = () => {
                                 header={(
                                     <Row key={exchange.id}>
                                         <Col span={6}>
-                                            <Text><strong>{exchange.rank}.</strong></Text>
+                                            <Text><strong>{exchange.rank}. </strong></Text>
                                             <Avatar className="exchangeImage" src={exchange.iconUrl} />
-                                            <Text><strong>{exchange.name}</strong></Text>
+                                            <Text><strong> {exchange.name}</strong></Text>
                                         </Col>
                                         <Col span={6}>${millify(exchange.volume)}</Col>
                                         <Col span={6}>{millify(exchange.numberOfMarkets)}</Col>

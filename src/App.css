@@ -5,6 +5,8 @@
    --pink: #0071bd;
    --light-blue: #e6f7ff;
    --border: #d9d9d9;
+   --main: rgb(82, 90, 160);
+   --main2: rgb(120, 128, 204);
 }
 
 * {
@@ -12,14 +14,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+a {
+    color: var(--main2) !important;
+}
 a:hover{
-    color: var(--pink) !important;
+    color: var(--main) !important;
 }
 
 .app{
     display: flex;
     overflow: hidden;
+    background: rgb(252, 250, 253);
 }
 
 .navbar{
@@ -34,6 +39,7 @@ a:hover{
 }
 .routes{
     padding: 20px;
+    background: rgb(252, 250, 253);
 }
 .navContainer{
     position: fixed;
@@ -55,8 +61,12 @@ a:hover{
     margin:0 0 0 15px;
 }
 .logo a{
-   color: white;
+   color: white !important;
 }
+.logo a:hover{
+    color: rgb(82, 90, 160) !important;
+}
+
 .menuControlContainer{
     display: none !important;
     position: absolute !important;
@@ -150,7 +160,15 @@ a:hover{
 
 .coinHeadingContainer .coinName{
     font-weight: 900;
-    color: var(--pink);
+    color: var(--main) !important;
+}
+
+@media screen and (max-width:800px){
+    .coinHeadingContainer .coinName{
+        font-weight: 900;
+        font-size: 1.2rem;
+        color: var(--main) !important;
+    }
 }
 
 .coinHeadingContainer p{
@@ -170,13 +188,13 @@ a:hover{
     font-weight: 700;
     font-size: 1.4rem;
     margin-top: 20px;
-    color: var(--pink);
+    color: black;
 }
 
 .coinDetailsHeading{
     font-weight: 700 !important;
     margin-top: 20px !important;
-    color: var(--pink) !important;
+    color: black !important;
 }
 
 .coinStats{
@@ -281,9 +299,12 @@ a:hover{
         margin: 0;
     }
 }
+
 @media screen and (max-width: 500px){
     .heading{
-        margin-top: 20px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -321,11 +342,18 @@ width: 70%;
     display: flex;
     justify-content: space-between;
     gap: 50px;
-    color: #0071bd;
+    color: var(--main) !important;
 }
 .chartTitle{
-    color: #0071bd !important;
+    color: var(--main) !important;
 }
+
+@media screen and (max-width:1000px){
+    .chartTitle {
+        color: var(--main) !important;
+    }
+}
+
 .priceContainer{
     display: flex !important;
     gap: 20px !important;
@@ -348,6 +376,23 @@ width: 70%;
 .showMore{
     margin-top: 0px !important;
 }
+.showMore a{
+    color: rgb(120, 128, 204) !important;
+}
+.showMore a:hover{
+    color: rgb(82, 90, 160) !important;
+}
+@media screen and (max-width:1000px){
+.showMore{
+font-size: 1rem !important;
+}
+.showMore a{
+    color: rgb(120, 128, 204) !important;
+}
+.showMore a:hover{
+    color: rgb(82, 90, 160) !important;
+}
+};
 .exchangeImage{
     margin: 0px 10px !important;
 }
@@ -375,4 +420,21 @@ width: 70%;
     flex-direction: column;
     padding: 20px;
     align-items: center;
+    color: rgb(82, 90, 160) !important;
 }
+.footer a{
+    color: rgb(82, 90, 160) !important;
+}
+@media screen and (max-width:1000px){
+    .footer {
+        padding: 5px;
+        font-size: 0.7rem;
+        color: rgb(82, 90, 160) !important;
+    }
+    .footer a{
+        color: rgb(82, 90, 160) !important;
+    }
+}
+
+/* Antd globals */
+

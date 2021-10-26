@@ -34,7 +34,7 @@ const App = () => {
                     </div>
                 </Layout>
             <div className="footer">
-                    <Typography.Title level={5} style={{ color: "white", textAlign: "center" }}>
+                    <Typography.Title level={5} style={{ color: "grey", textAlign: "center", fontSize: "0.7rem" }}>
                         © 2021 Copyright Jan Karpowicz
                     </Typography.Title>
                     <Space>

@@ -28,8 +28,8 @@ const Navbar = () => {
         <div className="navContainer">
             <div className="logoContainer">
                 <Avatar src={icon} size="large" />
-                <Typography.Title level={2} className="logo">
-                    <Link to="/">CryptoApp</Link>
+                <Typography.Title level={3} className="logo">
+                    <Link to="/">Crypto HQ</Link>
                 </Typography.Title>
                 <Button className="menuControlContainer" onClick={() => setActiveMenu(!activeMenu)}>
                     <MenuOutlined />

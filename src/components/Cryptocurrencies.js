@@ -41,7 +41,11 @@ const Cryptocurrencies = ({ simplified }) => {
                                 extra={<img className="cryptoImage" src={currency.iconUrl} alt="crypto logo" />}
                                 hoverable
                             >
-                                <p>Price: ${millify(currency.price)}</p>
+                                <p>Price: ${millify(currency.price, {
+                                    precision: 3,
+                                    lowercase: true,
+                                    decimalSeparator: ","
+                                })}</p>
                                 <p>Market Cap: ${millify(currency.marketCap)}</p>
                                 <p>Daily Change: {millify(currency.change)}%</p>
                             </Card>

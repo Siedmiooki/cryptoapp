@@ -20,8 +20,8 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
                 label: "Price in USD",
                 data: coinPrice,
                 fill: false,
-                backgroundColor: "#0071bd",
-                borderColor: "#0071bd"
+                backgroundColor: "rgb(82, 90, 160)",
+                borderColor: "rgb(82, 90, 160)"
             }
         ]
     }
@@ -41,7 +41,7 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
     return (
         <>
             <Row className="chartHeader">
-                <Title level={2} className="chartTitle">
+                <Title level={3} className="chartTitle">
                     {coinName} Price Chart
                 </Title>
                 <Col className="priceContainer">
