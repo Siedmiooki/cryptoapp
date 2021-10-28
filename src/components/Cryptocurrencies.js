@@ -42,7 +42,7 @@ const Cryptocurrencies = ({ simplified }) => {
                                 hoverable
                             >
                                 <p>Price: ${millify(currency.price, {
-                                    precision: 3,
+                                    precision: 4,
                                     lowercase: true,
                                     decimalSeparator: ","
                                 })}</p>

@@ -2,7 +2,7 @@
     --text-primary:#000;
     --bgPrimary:#fff;
    --bgSecondary: #F9F9F9;
-   --pink: #0071bd;
+   --blue: #0071bd;
    --light-blue: #e6f7ff;
    --border: #d9d9d9;
    --main: rgb(82, 90, 160);
@@ -19,6 +19,9 @@ a {
 }
 a:hover{
     color: var(--main) !important;
+}
+a:focus{
+    color: white !important;
 }
 
 .app{
@@ -128,7 +131,9 @@ a:hover{
     }
   
     .menuControlContainer{
-        display: block !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
     }
 
     .antMenu{
@@ -231,7 +236,7 @@ a:hover{
 
 .coinDescLink h2{
     font-weight: 700;
-    color: var(--pink);
+    color: var(--blue);
 }
 
 .coinDescLink p{
@@ -240,7 +245,7 @@ a:hover{
 }
 
 .coinDescLink a{
-    color: var(--pink);
+    color: var(--blue);
 }
 
 .coinDescLink h3{
@@ -270,7 +275,7 @@ a:hover{
 }
 
 .coinLink a{
-    color: var(--pink);
+    color: var(--blue);
     font-weight: 700;
     font-size: 1rem;
 }
