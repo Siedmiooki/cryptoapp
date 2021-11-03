@@ -256,6 +256,10 @@ a:focus{
     flex: 0.5;
 }
 
+.coinDesc p{
+    font-weight: 400 !important;
+}
+
 .coinLinks{
   padding: 0px 20px;
     flex: 0.5;
